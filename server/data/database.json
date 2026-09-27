@@ -1,0 +1,199 @@
+{
+  "organization": {
+    "id": 1,
+    "code": "ORG001",
+    "name": "Green Origin Trading",
+    "defaultLanguage": "en"
+  },
+  "users": [
+    {
+      "id": 1,
+      "organizationId": 1,
+      "username": "owner",
+      "passwordHash": "d3ad9315b7be5dd53b31a273b3b3aba5defe700808305aa16a3062b76658a791",
+      "displayName": "Amina Diallo",
+      "language": "en",
+      "status": "ACTIVE",
+      "role": "OWNER",
+      "lastLoginAt": "2026-09-06T03:14:00.218Z"
+    }
+  ],
+  "farmers": [
+    {
+      "id": 1,
+      "organizationId": 1,
+      "farmerNo": "F000001",
+      "name": "John Koffi",
+      "phone": "+225 07 10 20 30",
+      "village": "Abengourou",
+      "idNumber": "",
+      "notes": "Long-term cocoa supplier",
+      "createdAt": "2026-08-12T08:00:00.000Z",
+      "updatedAt": "2026-08-12T08:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "organizationId": 1,
+      "farmerNo": "F000002",
+      "name": "Marie Kouassi",
+      "phone": "+225 05 22 48 10",
+      "village": "Daloa",
+      "idNumber": "",
+      "notes": "",
+      "createdAt": "2026-08-21T08:00:00.000Z",
+      "updatedAt": "2026-08-21T08:00:00.000Z"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "organizationId": 1,
+      "code": "COCOA",
+      "nameEn": "Cocoa",
+      "nameFr": "Cacao",
+      "defaultUnit": "kg",
+      "active": true,
+      "sortOrder": 1
+    },
+    {
+      "id": 2,
+      "organizationId": 1,
+      "code": "COFFEE",
+      "nameEn": "Coffee",
+      "nameFr": "Café",
+      "defaultUnit": "kg",
+      "active": true,
+      "sortOrder": 2
+    }
+  ],
+  "indicators": [
+    {
+      "id": 1,
+      "productId": 1,
+      "code": "MOISTURE",
+      "nameEn": "Moisture",
+      "nameFr": "Humidité",
+      "dataType": "NUMBER",
+      "unit": "%",
+      "required": true,
+      "options": [],
+      "active": true
+    },
+    {
+      "id": 2,
+      "productId": 1,
+      "code": "FERMENTATION",
+      "nameEn": "Fermentation",
+      "nameFr": "Fermentation",
+      "dataType": "SELECT",
+      "unit": "",
+      "required": true,
+      "options": [
+        "Good",
+        "Average",
+        "Poor"
+      ],
+      "active": true
+    },
+    {
+      "id": 3,
+      "productId": 1,
+      "code": "GRADE",
+      "nameEn": "Quality grade",
+      "nameFr": "Qualité",
+      "dataType": "SELECT",
+      "unit": "",
+      "required": true,
+      "options": [
+        "A",
+        "B",
+        "C"
+      ],
+      "active": true
+    },
+    {
+      "id": 4,
+      "productId": 2,
+      "code": "MOISTURE",
+      "nameEn": "Moisture",
+      "nameFr": "Humidité",
+      "dataType": "NUMBER",
+      "unit": "%",
+      "required": true,
+      "options": [],
+      "active": true
+    },
+    {
+      "id": 5,
+      "productId": 2,
+      "code": "DEFECT_RATE",
+      "nameEn": "Defect rate",
+      "nameFr": "Taux de défaut",
+      "dataType": "NUMBER",
+      "unit": "%",
+      "required": true,
+      "options": [],
+      "active": true
+    },
+    {
+      "id": 6,
+      "productId": 2,
+      "code": "GRADE",
+      "nameEn": "Quality grade",
+      "nameFr": "Qualité",
+      "dataType": "SELECT",
+      "unit": "",
+      "required": true,
+      "options": [
+        "A",
+        "B",
+        "C"
+      ],
+      "active": true
+    }
+  ],
+  "purchases": [
+    {
+      "id": 1,
+      "organizationId": 1,
+      "purchaseNo": "PUR-20260901-0001",
+      "farmerId": 1,
+      "productId": 1,
+      "purchaseDate": "2026-09-01",
+      "weight": 120.5,
+      "unit": "kg",
+      "bagCount": 4,
+      "notes": "Clean and well dried.",
+      "status": "CONFIRMED",
+      "qualityValues": [
+        {
+          "indicatorId": 1,
+          "name": "Moisture",
+          "unit": "%",
+          "value": "7.5"
+        },
+        {
+          "indicatorId": 2,
+          "name": "Fermentation",
+          "unit": "",
+          "value": "Good"
+        },
+        {
+          "indicatorId": 3,
+          "name": "Quality grade",
+          "unit": "",
+          "value": "A"
+        }
+      ],
+      "images": [],
+      "signature": {
+        "dataUrl": "",
+        "signedAt": "2026-09-01T10:30:00.000Z"
+      },
+      "createdBy": 1,
+      "createdAt": "2026-09-01T10:20:00.000Z",
+      "updatedAt": "2026-09-01T10:30:00.000Z",
+      "confirmedAt": "2026-09-01T10:30:00.000Z"
+    }
+  ]
+}

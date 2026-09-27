@@ -1,0 +1,15 @@
+{
+  "name": "harvest-purchase-manager",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node server/server.js",
+    "start": "node server/server.js",
+    "db:migrate": "node server/db/migrate.js",
+    "test": "node --test server/server.test.js"
+  },
+  "dependencies": {
+    "ali-oss": "^6.23.0",
+    "mysql2": "^3.24.4"
+  }
+}
